@@ -2,7 +2,7 @@ title: Risbuild
 email: radoslavsapundzhiev@gmail.com
 description: Latest technologies, combined with expert work!
 destination: docs
-baseurl: "risbuild" # the subpath of your site, e.g. /blog
+baseurl: "/risbuild" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: radoslavsapundzhiev
 github_username:  radoslavsapundzhiev
