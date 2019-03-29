@@ -62,3 +62,23 @@ body{
     color: var(--color-main-text, #FFF);
     padding: 4rem;
  }
+
+h2{
+    animation: slidein 0.5s forwards;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+    animation-iteration-count: 7;
+    animation-direction: alternate;
+    animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+ @keyframes slidein{
+    from{
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(10rem);
+        opacity: 1;
+    }
+ }

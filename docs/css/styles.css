@@ -62,3 +62,44 @@ body{
     color: var(--color-main-text, #FFF);
     padding: 4rem;
  }
+
+h2{
+    -webkit-animation: slidein 0.5s forwards;
+            animation: slidein 0.5s forwards;
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+    -webkit-animation-iteration-count: 7;
+            animation-iteration-count: 7;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+    -webkit-animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+            animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+ @-webkit-keyframes slidein{
+    from{
+        -webkit-transform: translateX(-100%);
+                transform: translateX(-100%);
+        opacity: 0;
+    }
+    to{
+        -webkit-transform: translateX(10rem);
+                transform: translateX(10rem);
+        opacity: 1;
+    }
+ }
+
+ @keyframes slidein{
+    from{
+        -webkit-transform: translateX(-100%);
+                transform: translateX(-100%);
+        opacity: 0;
+    }
+    to{
+        -webkit-transform: translateX(10rem);
+                transform: translateX(10rem);
+        opacity: 1;
+    }
+ }
