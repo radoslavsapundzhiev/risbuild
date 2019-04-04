@@ -1,0 +1,55 @@
+:root{
+    --sizing-fs-base: 12px;
+    --sizing-ws-base: 1.5em;
+
+    --sizing-fs-tablet: 14px;
+    --sizing-fs-laptop: 16px;
+    --sizing-fs-desktop: 18px;
+    --sizing-fs-huge: 20px;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    box-sizing: border-box;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+/* Typography */
+
+html{
+    font: var(--sizing-fs-base)/1.5 "Georgia", serif;
+}
+
+@media (min-width: 600px){
+    html{ font-size: var(--sizing-fs-tablet);}
+}
+
+@media (min-width: 1260px){
+    html{ font-size: var(--sizing-fs-laptop);}
+}
+
+@media (min-width: 1420px){
+    html{ font-size: var(--sizing-fs-desktop);}
+}
+
+@media (min-width: 1660px){
+    html{ font-size: var(--sizing-fs-huge);}
+}
+
+p, ul, ol, dl, table{
+    margin-bottom: var(--sizing-ws-base);
+}
+
+ul, ol{
+    padding-left: var(--sizing-ws-base);
+}
+
+h1, h2, h3{
+    margin: 0 0 calc(var(--sizing-ws-base) / 3) 0;
+}

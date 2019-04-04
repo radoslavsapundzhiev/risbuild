@@ -1,0 +1,14 @@
+.site-footer{
+    border-top: var(--sizing-basic-border) solid var(--color-basic-border);
+    padding-top: var(--sizing-ws-base);
+    font-size: 0.8em;
+}
+
+.site-footer p{
+    font-style: italic;
+    opacity: 0.6;
+}
+
+.site-footer .main-nav a{
+    color: #666;
+}

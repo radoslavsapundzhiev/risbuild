@@ -1,0 +1,14 @@
+<nav class="main-nav">
+    <ul>
+        {% for page in site.pages %}
+        {% if page.url != '/feed.xml' and page.url != '/' %}
+        <li>
+            <a href="{{ page.url }}">
+                <span class="title">{{ page.title }}</span>
+                <span class="date">{{ page.date | page_to_string }}</span>
+            </a>
+        </li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+</nav>

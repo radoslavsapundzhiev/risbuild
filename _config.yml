@@ -8,7 +8,7 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: radoslavsapundzhiev
 github_username:  radoslavsapundzhiev
 
-exclude: [_assets]
+exclude: [_assets, node_modules, Gemfile, Gemfile.lock, gulpfile.js, package.json, package-lock.json, README.md]
 # Build settings
 markdown: kramdown
 plugins:

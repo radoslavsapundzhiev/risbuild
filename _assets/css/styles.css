@@ -1,84 +1,24 @@
+@import url('typography.css');
+@import url('navigation.css');
+
+@import url('site-header.css');
+@import url('site-footer.css');
+
 :root{
-    --color-main-bgrd: #900;
+    --color-main-bgrd: #333;
     --color-main-text: #FFF;
+    --color-main-link: orange;
 
-    --sizing-fs-base: 12px;
-    --sizing-ws-base: 1.5em;
+    --color-basic-border: #CCC;
 
-    --sizing-fs-tablet: 14px;
-    --sizing-fs-laptop: 16px;
-    --sizing-fs-desktop: 18px;
-    --sizing-fs-huge: 20px;
-}
-*{
-    padding: 0;
-    margin: 0;
-}
-
-html{
-    box-sizing: border-box;
-}
-
-*, *:before, *:after{
-    box-sizing: inherit;
-}
-
-/* Typography */
-
-html{
-    font: var(--sizing-fs-base)/1.5 "Georgia", serif;
-}
-
-@media (min-width: 600px){
-    html{ font-size: var(--sizing-fs-tablet);}
-}
-
-@media (min-width: 1260px){
-    html{ font-size: var(--sizing-fs-laptop);}
-}
-
-@media (min-width: 1420px){
-    html{ font-size: var(--sizing-fs-desktop);}
-}
-
-@media (min-width: 1660px){
-    html{ font-size: var(--sizing-fs-huge);}
-}
-
-p, ul, ol, dl, table{
-    margin-bottom: var(--sizing-ws-base);
-}
-
-ul, ol{
-    padding-left: var(--sizing-ws-base);
-}
-
-h1, h2, h3{
-    margin: 0 0 calc(var(--sizing-ws-base) / 3) 0;
+    --sizing-basic-border: 1px;
 }
 
 body{
-    background: var(--color-main-bgrd, #000);
-    color: var(--color-main-text, #FFF);
-    padding: 4rem;
- }
-
-h2{
-    animation: slidein 0.5s forwards;
-    animation-delay: 1s;
-    animation-fill-mode: both;
-    animation-iteration-count: 7;
-    animation-direction: alternate;
-    animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    background: #eee;
+    padding: 2rem 3rem;
 }
 
- @keyframes slidein{
-    from{
-        transform: translateX(-100%);
-        opacity: 0;
-    }
-    to{
-        transform: translateX(10rem);
-        opacity: 1;
-    }
- }
+.site-content{
+    padding: 2rem 0;
+}
