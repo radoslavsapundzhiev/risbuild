@@ -1,0 +1,22 @@
+.container{
+    width: 50%;
+    margin: 0 auto;
+    background-color: #FFF;
+    border-radius: 0.5em;
+    padding: 1.5em;
+}
+
+input[type=text], textarea{
+    width:100%;
+    padding: 1em;
+    border: 1px solid #000;
+    border-radius: 0.3em;
+}
+
+input[type=submit]{
+    display: block;
+    margin: 1rem auto 0 auto;
+    padding: 0.5em 2em;
+    border-radius: 0.3em;
+}
+

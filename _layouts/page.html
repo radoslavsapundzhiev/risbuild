@@ -7,10 +7,20 @@
   <link rel="stylesheet" href="{{ site.baseurl }}/css/styles.css">
 </head>
 
-<body>
+<body class="{{ page.body_class }}">
+  <input type="checkbox" name="main-nav-toggle" id="main-nav-toggle">
   <header class="site-header">
-    <h1><a href="/">{{ site.title }}</a></h1>
-    {% include navigation.html %}
+    <div class="wrapper">
+      <div class="site-branding">
+        <h1><a href="/">{{ site.title }}</a></h1>
+        <h3>{{site.description}}</h3>
+      </div>
+      <label for="main-nav-toggle" id="toggle">
+          <i class="fas fa-bars"></i>
+          <i class="fas fa-times"></i>
+      </label>
+      {% include navigation.html %}
+    </div>
   </header>
 
   <main class="site-content">
@@ -23,7 +33,7 @@
 
     <p>&copy; Risbuild by Rado</p>
     {% include navigation.html %}
-    
+
   </footer>
 
 </body>
